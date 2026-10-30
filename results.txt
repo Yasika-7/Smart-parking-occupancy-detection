@@ -1,0 +1,41 @@
+Cropped: free 41720 occupied 47550
+Classes: ['free', 'occupied']
+Epoch 1 train_acc 0.8876 train_loss 0.2741 val_acc 0.9177 val_loss 0.2094
+Epoch 2 train_acc 0.9162 train_loss 0.2146 val_acc 0.9246 val_loss 0.1905
+Epoch 3 train_acc 0.9287 train_loss 0.1854 val_acc 0.9261 val_loss 0.1883
+Epoch 4 train_acc 0.9393 train_loss 0.1596 val_acc 0.9309 val_loss 0.1830
+Epoch 5 train_acc 0.9467 train_loss 0.1413 val_acc 0.9291 val_loss 0.1974
+Epoch 6 train_acc 0.9516 train_loss 0.1266 val_acc 0.9295 val_loss 0.2038
+[KERAS] val loss 0.2038, val accuracy 92.95% on 17854 images
+              precision    recall  f1-score   support
+
+        free     0.9577    0.8884    0.9218      8341
+    occupied     0.9080    0.9656    0.9359      9513
+
+    accuracy                         0.9295     17854
+   macro avg     0.9329    0.9270    0.9288     17854
+weighted avg     0.9312    0.9295    0.9293     17854
+
+ROC-AUC: 0.9846
+Confusion matrix [rows actual free/occupied, cols predicted]:
+[[7410  931]
+ [ 327 9186]]
+Keras file KB: 2054.5
+TFLite float KB: 673.8
+TFLite int8 KB: 177.9
+[INT8] accuracy on ALL 17854 validation images: 93.28%
+              precision    recall  f1-score   support
+
+        free     0.9543    0.8993    0.9260      8341
+    occupied     0.9159    0.9623    0.9385      9513
+
+    accuracy                         0.9328     17854
+   macro avg     0.9351    0.9308    0.9323     17854
+weighted avg     0.9339    0.9328    0.9327     17854
+
+INT8 confusion matrix:
+[[7501  840]
+ [ 359 9154]]
+DEMO 1: slots 21, predicted free 19, occupied 2, actual free 21, occupied 0, correct 19, accuracy 90.48%
+DEMO 2: slots 46, predicted free 45, occupied 1, actual free 45, occupied 1, correct 46, accuracy 100.00%
+DEMO 3: slots 39, predicted free 3, occupied 36, actual free 2, occupied 37, correct 38, accuracy 97.44%
